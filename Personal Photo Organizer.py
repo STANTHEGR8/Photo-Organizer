@@ -14,10 +14,10 @@ from tqdm.auto import tqdm
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 
 # Define constants
-PHOTO_DIR = 'D:/Photos42024/'
-PARENT_DIR = 'D:/Programming/Python/Project/Organized Photos/'
-BATCH_SIZE = 10
-DELAY = 1
+PHOTO_DIR = 'D:/Photos42024/' # Source folder of your images
+PARENT_DIR = 'D:/Programming/Python/Project/Organized Photos/' # Destination folder
+BATCH_SIZE = 10 # Number of photos to process per thread batch
+DELAY = 1 # Not used currently, reserved for future throttling
 
 # Define helper functions
 def get_photo_files():
